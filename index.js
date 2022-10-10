@@ -56,3 +56,4 @@ console.log(rez_infty);
 console.log(Number(rez_infty));
 console.log(String(rez_infty));
 console.log(Boolean(rez_infty));
+console.log("hi");
