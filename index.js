@@ -38,7 +38,7 @@ console.log(typeof num);
 let numbr = 123;
 let strg = '123z';
 let strg2 = '123';
-let undef = ''
+let undef = '';
 let booln = true;
 let booln2 = false;
 
@@ -57,3 +57,41 @@ console.log(Number(rez_infty));
 console.log(String(rez_infty));
 console.log(Boolean(rez_infty));
 console.log("hi");
+
+console.log(Number("5"));
+console.log(Number("a5"));
+console.log(Number("5a"));
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number(undefined));
+
+console.log(Number( 5 + "5" ));
+console.log(Number( 5 + + "5" ));
+console.log(Number( +"true"));
+console.log(Number( +true ));
+console.log(Number( +false ));
+console.log(Number( +null ));
+console.log(Number( +undefined ));
+
+console.log( 5 % 2);
+console.log( 2 ** -2); // = 1/ 2**2 = =0.25
+console.log( 4 **(-1/2)); // = 1 / кв корень из 4х = 0.5
+console.log( 8 **(-1/3));
+console.log( 1/8**(-2/3)); // = 8 в степени 2/3 = корень куб из 8**2
+
+let aaa, bbb, ccc;
+aaa = bbb = ccc = 2 + 2;
+console.log( aaa, bbb, ccc);
+
+let counter = 1;
+  //counter = ++counter; // (*) меняем ++counter на counter++ 2
+console.log( counter++ ); // 1
+
+console.log( 'a' > 'z')
+console.log( 'a' < 'z')
+console.log( 'a' > 'A')
+console.log( 'a' < 'A')
+console.log( 'abc' > 'abz')
+console.log( 'абв' > 'абг')
+console.log( 'я' > 'а')
+console.log( 'z' > 'a')
