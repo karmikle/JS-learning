@@ -9,11 +9,11 @@ while (true) {
     if ( !secondArgument ) break;
 
     let c = prompt( "enter result of A * B =", "");
-    if ( !c ) break;
+    if ( !c ) break; // через или 1 брейк
 
     let multiplyAction = firstArgmnt * secondArgument;
     
-    switch ( c == multiplyAction ) {
+    switch ( c === multiplyAction ) {
         case ( c > multiplyAction ):
             console.log("not enaught");
             break;

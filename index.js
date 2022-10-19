@@ -95,3 +95,13 @@ console.log( 'abc' > 'abz')
 console.log( 'абв' > 'абг')
 console.log( 'я' > 'а')
 console.log( 'z' > 'a')
+console.log( 'a' > 'A')
+
+let div = prompt ( "", "");
+let div2 = "/"
+console.log(div)
+console.log(typeof div)
+console.log(div2)
+console.log(typeof div2)
+console.log(div == div2)
+console.log(div === div2)

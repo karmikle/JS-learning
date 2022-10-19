@@ -50,3 +50,13 @@ for ( let x = 2; x <= n; x++ ) {
     }
     console.log(x);
 }
+
+const test = function ( k, l ) {
+    console.log("12123");
+    throw new Error({'hehe':'haha'});
+}
+try { 
+    test(2);
+} catch (error) {
+    console.log(error);
+}
