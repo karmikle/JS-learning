@@ -72,7 +72,7 @@ function finalRezult() {                                            // цикл�
     } else {
         fin =Number(r).toFixed(0);                                  // после проверки получаем рандомное число в указаном диапазоне) + проверка на значения после запятой
         alert(fin);
-        console.log(fin);
+        console.log(+fin);
         return fin
     }
 }
@@ -87,3 +87,18 @@ function rundomizer() {                                             // заво�
 }
 
 rundomizer(); // рандомайзер для числео от 1 до 99999
+
+
+
+function randomInteger(min, max) {                               // тоже рандомайзер
+    // случайное число от min до (max+1)
+    let rand = min + Math.random() * (max + 1 - min);
+    console.log(Math.floor(rand))
+    return Math.floor(rand);                                   // убирает значения после запятой
+  }
+
+function infRandom() {
+    if ( randomInteger(1, 9999)) {
+        infRandom()
+    }
+}
