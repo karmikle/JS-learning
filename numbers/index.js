@@ -88,8 +88,6 @@ function rundomizer() {                                             // заво�
 
 rundomizer(); // рандомайзер для числео от 1 до 299999
 
-
-
 function randomInteger(min, max) {                               // тоже рандомайзер
     // случайное число от min до (max+1)
     let rand = min + Math.random() * (max + 1 - min);
