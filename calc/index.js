@@ -22,7 +22,7 @@ function opr() {
         alert( "Goodby!" );
         return false;
     }
-    
+    // if ( action !== "-" || action"+")
     if ( action === "-" ) {} else
     if ( action === "+" ) {} else
     if ( action === "*" ) {} else
@@ -55,7 +55,7 @@ function firstArgmnt() {
     } else if ( isNaN( firstA ) ) {
         alert ( " Be more attentive, use only Numbers!!!" );
         return firstArgmnt();
-    }   
+    }
 }
 
 function secondArgmnt() {
@@ -79,10 +79,10 @@ function secondArgmnt() {
     } else if ( isNaN( secondA ) ) {
         alert ( " Be more attentive, use only Numbers!!!" );
         return secondArgmnt();
-    }   
+    }
 }
 
-function rezult() {
+function rezult() {                         // через обьект
     if ( action === "+" ) {
         alert( sum( a, b ) );
         consoleRezult = sum( a, b);
