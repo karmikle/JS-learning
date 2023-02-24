@@ -46,3 +46,18 @@ function sumSalaryies(department) {
 }
 
 console.log(sumSalaryies(company));
+
+// связаный список
+let list = { value: 1 }; 
+list.next = { value: 2 };
+list.next.next = { value: 3 };
+list.next.next.next = { value: 4 };
+
+let secondList = list.next.next; // разделили на части
+list.next.next = null;
+
+list.next.next = secondList; // обьеденили
+
+list = { value: "new item", next: list}; // добавили новый елемент
+
+list.next = list.next.next; // удалили елемент ( изменили значение некст предыдущего елем.)
