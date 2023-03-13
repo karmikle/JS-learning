@@ -35,3 +35,11 @@ let obj = Object.create(null);
 let key = prompt("?", "__proto__");
 obj[key] = "some value";
 console.log(obj[key]); 
+
+// Ещё методы:
+
+// Object.keys(obj) / Object.values(obj) / Object.entries(obj) – возвращают массив всех перечисляемых собственных строковых ключей/значений/пар ключ-значение.
+// Object.getOwnPropertySymbols(obj) – возвращает массив всех собственных символьных ключей.
+// Object.getOwnPropertyNames(obj) – возвращает массив всех собственных строковых ключей.
+// Reflect.ownKeys(obj) – возвращает массив всех собственных ключей.
+// obj.hasOwnProperty(key): возвращает true, если у obj есть собственное (не унаследованное) свойство с именем key.
